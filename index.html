@@ -3,113 +3,678 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ege Borluoglu | Google Ads Specialist</title>
-  <meta name="description" content="Ege Borluoglu is a digital marketer based in Toronto, Canada, offering Google Ads campaign setup, management, and optimization services." />
+  <title>Ege Borluoglu | Google Ads Consultant</title>
+  <meta name="description" content="Ege Borluoglu is a Toronto-based digital marketer offering Google Ads strategy, campaign setup, account management, and performance optimization for lead generation." />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0f172a;
-      --bg-2: #111827;
-      --panel: rgba(255, 255, 255, 0.06);
-      --border: rgba(255, 255, 255, 0.08);
-      --text: #f8fafc;
-      --muted: #cbd5e1;
-      --accent: #38bdf8;
-      --accent-2: #22c55e;
+      --bg: #0b1220;
+      --bg-soft: #121a2b;
+      --surface: #ffffff;
+      --surface-soft: #f7f9fc;
+      --text: #0f172a;
+      --muted: #5b6474;
+      --border: #e8edf4;
+      --navy: #0f2747;
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --blue-soft: #eaf2ff;
+      --green: #0f9f6e;
+      --shadow-sm: 0 10px 30px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 18px 50px rgba(15, 23, 42, 0.10);
+      --radius: 22px;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
       color: var(--text);
+      background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
+
     .navbar {
-      background: rgba(15, 23, 42, 0.8) !important;
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.92) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(15, 23, 42, 0.06);
     }
-    .nav-link { color: var(--muted) !important; }
-    .nav-link:hover { color: var(--text) !important; }
-    .hero { padding: 6rem 0 4rem; }
-    .display-title { font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 700; }
-    .btn-brand { background: var(--accent); color: #0b1120; font-weight: 700; }
-    .glass-card {
-      background: rgba(255,255,255,0.05);
+
+    .navbar-brand {
+      color: var(--navy) !important;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .nav-link {
+      color: #334155 !important;
+      font-weight: 600;
+      margin-left: 0.4rem;
+      margin-right: 0.4rem;
+    }
+
+    .nav-link:hover {
+      color: var(--blue) !important;
+    }
+
+    .btn-primary-brand {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+      font-weight: 700;
+      padding: 0.9rem 1.25rem;
+      border-radius: 14px;
+    }
+
+    .btn-primary-brand:hover {
+      background: var(--blue-dark);
+      border-color: var(--blue-dark);
+      color: #fff;
+    }
+
+    .btn-outline-brand {
+      background: transparent;
+      border: 1px solid #cdd9ee;
+      color: var(--navy);
+      font-weight: 700;
+      padding: 0.9rem 1.25rem;
+      border-radius: 14px;
+    }
+
+    .btn-outline-brand:hover {
+      background: #f3f7ff;
+      color: var(--navy);
+      border-color: #bdd0ef;
+    }
+
+    .hero {
+      padding: 7rem 0 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 560px;
+      height: 560px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(37,99,235,0.12) 0%, rgba(37,99,235,0) 70%);
+      top: -160px;
+      right: -120px;
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 0.9rem;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.7rem, 5vw, 4.9rem);
+      line-height: 1.02;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      margin-bottom: 1.2rem;
+      color: var(--navy);
+      max-width: 760px;
+    }
+
+    .hero-lead {
+      font-size: 1.14rem;
+      line-height: 1.75;
+      color: var(--muted);
+      max-width: 690px;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.96rem;
+    }
+
+    .trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.8rem 1rem;
+      background: #fff;
       border: 1px solid var(--border);
-      border-radius: 1rem;
-      padding: 1.5rem;
+      border-radius: 999px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-panel {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 1.8rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-panel-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-panel small,
+    .muted {
+      color: var(--muted);
+    }
+
+    .metric-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1rem;
       height: 100%;
     }
-    .section-padding { padding: 2rem 0 4rem; }
-    .section-title { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; }
-    .text-muted-custom { color: var(--muted); }
+
+    .metric-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+      color: var(--navy);
+    }
+
+    .section {
+      padding: 2rem 0 5rem;
+    }
+
+    .section-kicker {
+      color: var(--blue);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.84rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--navy);
+      margin-bottom: 0.9rem;
+    }
+
+    .section-subtitle {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
+
+    .service-card,
+    .info-card,
+    .process-card,
+    .contact-card,
+    .cta-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      height: 100%;
+    }
+
+    .service-card {
+      padding: 1.7rem;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .icon-badge {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3,
+    .info-card h3,
+    .process-card h3,
+    .contact-card h3,
+    .cta-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.8rem;
+    }
+
+    .service-card p,
+    .info-card p,
+    .process-card p,
+    .contact-card p,
+    .cta-card p,
+    .check-list li,
+    .contact-list li {
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 0;
+    }
+
+    .check-list,
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .check-list li,
+    .contact-list li {
+      padding: 0.82rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .check-list li:last-child,
+    .contact-list li:last-child {
+      border-bottom: 0;
+    }
+
+    .about-panel {
+      background: linear-gradient(180deg, #0f2747 0%, #16345c 100%);
+      color: #fff;
+      border-radius: 28px;
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+      height: 100%;
+    }
+
+    .about-panel .section-title,
+    .about-panel h3,
+    .about-panel p,
+    .about-panel li {
+      color: #fff;
+    }
+
+    .about-panel .muted-light {
+      color: rgba(255,255,255,0.78) !important;
+    }
+
+    .about-highlight {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      padding: 1rem 1.1rem;
+    }
+
+    .process-card {
+      padding: 1.6rem;
+    }
+
+    .step {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .contact-card,
+    .cta-card {
+      padding: 1.8rem;
+    }
+
+    .contact-form .form-control {
+      border-radius: 14px;
+      border: 1px solid #d9e3f2;
+      padding: 0.95rem 1rem;
+      color: var(--text);
+      box-shadow: none;
+    }
+
+    .contact-form .form-control:focus {
+      border-color: #9cbaf5;
+      box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.12);
+    }
+
+    .contact-note {
+      color: var(--muted);
+      font-size: 0.94rem;
+      margin-top: 1rem;
+    }
+
+    .cta-card {
+      background: linear-gradient(135deg, #0f2747 0%, #1a4fa0 100%);
+      color: #fff;
+      border: 0;
+      box-shadow: var(--shadow-md);
+    }
+
+    .cta-card h3,
+    .cta-card p {
+      color: #fff;
+    }
+
+    footer {
+      padding: 2rem 0 2.6rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: #fff;
+    }
+
+    @media (max-width: 991.98px) {
+      .hero {
+        padding-top: 6rem;
+      }
+
+      .hero-title {
+        letter-spacing: -1px;
+      }
+    }
   </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container py-2">
+      <a class="navbar-brand" href="#top">Ege Borluoglu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-primary-brand" href="#contact">Book a Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Ege Borluoglu</a>
-  </div>
-</nav>
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-7">
+            <div class="eyebrow">Toronto-based Google Ads consultant</div>
+            <h1 class="hero-title">Google Ads strategy and management built for serious lead generation.</h1>
+            <p class="hero-lead">
+              I’m <strong>Ege Borluoglu</strong>, a digital marketer based in Toronto, Canada. I help businesses improve Google Ads performance through better account structure, cleaner targeting, sharper messaging, and ongoing optimization focused on qualified leads.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary-brand btn-lg">Get in Touch</a>
+              <a href="#services" class="btn btn-outline-brand btn-lg">View Services</a>
+            </div>
+            <div class="trust-row">
+              <div class="trust-pill">Google Ads setup</div>
+              <div class="trust-pill">Account management</div>
+              <div class="trust-pill">Conversion-focused optimization</div>
+            </div>
+          </div>
 
-<section class="hero">
-  <div class="container">
-    <div class="row align-items-center g-4">
-      <div class="col-lg-7">
-        <h1 class="display-title mb-3">Google Ads management focused on leads, not wasted spend.</h1>
-        <p class="text-muted-custom mb-4">
-          I’m Ege Borluoglu, a digital marketer based in Toronto, Canada. I help businesses launch, manage, and optimize Google Ads campaigns.
+          <div class="col-lg-5">
+            <div class="hero-panel">
+              <div class="hero-panel-top">
+                <div>
+                  <h2 class="h4 mb-1" style="color: var(--navy);">What I help with</h2>
+                  <small>Practical support for businesses that want stronger PPC performance.</small>
+                </div>
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <div class="metric-card">
+                    <h3>Setup</h3>
+                    <p class="muted mb-0">Campaign builds, structure, keywords, ads, and extensions.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="metric-card">
+                    <h3>Manage</h3>
+                    <p class="muted mb-0">Bid changes, search term reviews, negatives, and testing.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="metric-card">
+                    <h3>Improve</h3>
+                    <p class="muted mb-0">Ongoing optimization to reduce waste and improve lead quality.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="metric-card">
+                    <h3>Report</h3>
+                    <p class="muted mb-0">Clear direction on what is working, what is not, and what to fix.</p>
+                  </div>
+                </div>
+              </div>
+              <ul class="check-list">
+                <li>Search campaign setup and restructuring</li>
+                <li>Keyword research and ad group planning</li>
+                <li>Ad copy development and testing</li>
+                <li>Conversion tracking review</li>
+                <li>Ongoing management and optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-kicker">Services</div>
+        <h2 class="section-title">A more professional Google Ads presence starts with a better account.</h2>
+        <p class="section-subtitle">
+          Whether you are launching Google Ads for the first time or trying to fix an underperforming account, I provide focused support that prioritizes structure, intent, and measurable lead generation.
         </p>
-        <a href="#contact" class="btn btn-brand btn-lg">Get in Touch</a>
-      </div>
-      <div class="col-lg-5">
-        <div class="glass-card">
-          <h3>What I help with</h3>
-          <ul>
-            <li>Campaign setup</li>
-            <li>Keyword research</li>
-            <li>Ad copy & testing</li>
-            <li>Optimization</li>
-          </ul>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <div class="service-card">
+              <div class="icon-badge">01</div>
+              <h3>Campaign Setup</h3>
+              <p>
+                New campaign builds with proper segmentation, keyword targeting, ad groups, ads, assets, audience considerations, and budget foundations that make the account easier to manage and improve.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="service-card">
+              <div class="icon-badge">02</div>
+              <h3>Campaign Management</h3>
+              <p>
+                Ongoing account management including search term reviews, negative keyword work, bid and budget adjustments, ad testing, and performance monitoring to keep campaigns aligned with business goals.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="service-card">
+              <div class="icon-badge">03</div>
+              <h3>Optimization & Reporting</h3>
+              <p>
+                Regular performance reviews, conversion-focused recommendations, landing page feedback, and reporting that makes the account easier to understand instead of burying everything in vanity metrics.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-6">
+            <div class="about-panel">
+              <div class="section-kicker" style="color: #8cb8ff;">About</div>
+              <h2 class="section-title">Built for businesses that want cleaner execution and better lead quality.</h2>
+              <p class="muted-light mb-4">
+                I’m Ege Borluoglu, a digital marketer based in Toronto, Canada. My focus is Google Ads strategy, campaign setup, management, and optimization for businesses that want a sharper paid search presence and more efficient use of budget.
+              </p>
+              <div class="about-highlight mb-3">
+                <strong>My approach:</strong> focus on search intent, reduce wasted spend, improve structure, and keep decisions grounded in performance.
+              </div>
+              <div class="about-highlight">
+                <strong>What matters most:</strong> qualified leads, clearer reporting, and an account that is actually manageable over time.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="info-card p-4 h-100">
+              <h3>Who this is for</h3>
+              <ul class="check-list mt-2">
+                <li>Businesses launching Google Ads for the first time</li>
+                <li>Companies with campaigns that feel disorganized or inefficient</li>
+                <li>Teams that need outside account management support</li>
+                <li>Businesses looking for better lead quality rather than more junk traffic</li>
+                <li>Owners who want clearer direction and cleaner reporting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section-kicker">Process</div>
+        <h2 class="section-title">Straightforward work, not bloated agency theatre.</h2>
+        <p class="section-subtitle">
+          The process is simple: understand the business, build or clean up the account, manage it properly, and keep improving based on actual search behavior and conversion performance.
+        </p>
+        <div class="row g-4">
+          <div class="col-sm-6 col-xl-3">
+            <div class="process-card">
+              <div class="step">1</div>
+              <h3>Audit</h3>
+              <p>Review the offer, market, targeting, landing pages, and current account setup if one already exists.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="process-card">
+              <div class="step">2</div>
+              <h3>Build</h3>
+              <p>Create or restructure campaigns with cleaner segmentation, better keyword targeting, and stronger messaging.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="process-card">
+              <div class="step">3</div>
+              <h3>Manage</h3>
+              <p>Monitor search terms, budgets, bids, and ad performance while keeping waste under tighter control.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="process-card">
+              <div class="step">4</div>
+              <h3>Improve</h3>
+              <p>Keep refining toward stronger conversion quality, clearer insights, and better overall account efficiency.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5">
+            <div class="contact-card h-100">
+              <div class="section-kicker">Contact</div>
+              <h3>Let’s talk about your Google Ads account.</h3>
+              <p class="mb-3">
+                Replace the placeholder contact details below with your real email, phone number, Calendly link, or LinkedIn profile before publishing.
+              </p>
+              <ul class="contact-list">
+                <li><strong>Email:</strong> your@email.com</li>
+                <li><strong>Location:</strong> Toronto, Canada</li>
+                <li><strong>LinkedIn:</strong> linkedin.com/in/your-profile</li>
+                <li><strong>Services:</strong> Setup, management, optimization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="contact-card h-100">
+              <h3 class="mb-3">Send a Message</h3>
+              <form class="contact-form">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" name="name" placeholder="Your name" />
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="Your email" />
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="company" placeholder="Company name" />
+                  </div>
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Tell me about your business, your market, and what you need help with."></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary-brand">Send Inquiry</button>
+                  </div>
+                </div>
+              </form>
+              <p class="contact-note">This form is front-end only. On GitHub Pages, you will need Formspree, EmailJS, or another form service if you want messages to be delivered.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+        <div class="cta-card">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <h3 class="mb-2">Need a more credible online presence for your Google Ads services?</h3>
+              <p class="mb-0">This version is cleaner, more structured, and much closer to what a real professional landing page should look like.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="#contact" class="btn btn-light btn-lg fw-bold px-4">Contact Ege</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <div>© 2026 Ege Borluoglu</div>
+      <div>Google Ads consulting in Toronto, Canada</div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="section-padding" id="services">
-  <div class="container">
-    <h2 class="section-title">Services</h2>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="glass-card">
-          <h4>Campaign Setup</h4>
-          <p class="text-muted-custom">Full Google Ads setup for new campaigns.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="glass-card">
-          <h4>Management</h4>
-          <p class="text-muted-custom">Ongoing campaign monitoring and optimization.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="glass-card">
-          <h4>Optimization</h4>
-          <p class="text-muted-custom">Improve performance and reduce wasted spend.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-padding" id="contact">
-  <div class="container">
-    <h2 class="section-title">Contact</h2>
-    <p class="text-muted-custom">Email: your@email.com</p>
-  </div>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
