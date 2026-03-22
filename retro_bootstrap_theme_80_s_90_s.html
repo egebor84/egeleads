@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ege Leads | B2B Google Ads & PPC Management</title>
+  <meta name="description" content="Digital marketing specialist and PPC specialist focused on SEM, lead generation, optimization, increased revenue, and internet/web marketing performance for B2B companies." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      /* limited to 2 variants per color group */
+      --retro-black: #000000;
+      --retro-black-soft: #2f2f2f;
+      --retro-gray: #6f6f6f;
+      --retro-gray-light: #c0c0c0;
+      --retro-white: #ffffff;
+      --retro-white-soft: #f0f0f0;
+      --retro-charcoal: #2f2f2f;
+      --retro-light-gray: #c0c0c0;
+      --retro-panel: var(--retro-gray-light);
+      --retro-border-dark: var(--retro-black);
+      --retro-border-mid: var(--retro-gray);
+      --retro-border-light: var(--retro-white);
+      --retro-shadow: none;
+      --retro-inset: none;
+      --retro-outset: none;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--retro-white-soft);
+      color: var(--retro-black);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      letter-spacing: 0.02em;
+      min-height: 100vh;
+    }
+
+    h1, h2, h3, h4, h5, .navbar-brand, .btn, .badge, .form-label, .nav-link {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+    }
+
+    .muted, .section-subtitle, .proof-note, .service-text, .form-note, .form-trust, .cta-panel p, footer, .about-copy p {
+      color: var(--retro-charcoal);
+    }
+
+    .navbar.retro-nav {
+      background: var(--retro-black-soft);
+      border-bottom: 3px solid var(--retro-black);
+      box-shadow: var(--retro-shadow);
+    }
+
+    .navbar.retro-nav .nav-link,
+    .navbar.retro-nav .navbar-brand {
+      color: var(--retro-white);
+    }
+
+    .navbar.retro-nav .nav-link:hover,
+    .navbar.retro-nav .nav-link:focus {
+      background: var(--retro-black);
+      color: var(--retro-white);
+    }
+
+    .hero {
+      padding: 4.5rem 0 3rem;
+    }
+
+    .retro-window {
+      border: 2px solid var(--retro-black);
+      background: var(--retro-panel);
+    }
+
+    .retro-window + .retro-window {
+      margin-top: 1.5rem;
+    }
+
+    .retro-titlebar {
+      background: var(--retro-black-soft);
+      color: var(--retro-white);
+      padding: 0.4rem 0.7rem;
+      border-bottom: 2px solid var(--retro-black);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+    }
+
+    .retro-controls {
+      display: inline-flex;
+      gap: 0.35rem;
+    }
+
+    .retro-controls span {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      border: 2px solid var(--retro-white);
+      background: var(--retro-gray-light);
+      box-shadow: inset 1px 1px 0 #ffffff, inset -1px -1px 0 var(--retro-black);
+      position: relative;
+    }
+
+    .retro-controls span::before {
+      content: "_";
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      line-height: 1;
+      color: var(--retro-black);
+      transform: translateY(-1px);
+    }
+
+    .retro-controls span:nth-child(2)::before {
+      content: "□";
+      font-size: 9px;
+      transform: translateY(-1px);
+    }
+
+    .retro-controls span:nth-child(3)::before {
+      content: "×";
+      font-size: 10px;
+      transform: translateY(-1px);
+    }
+
+    .retro-screen {
+      background: var(--retro-white);
+      border: 2px solid var(--retro-black);
+      padding: 1.2rem;
+      height: 100%;
+    }
+
+    .display-box {
+      background: var(--retro-white);
+      border: 3px solid var(--retro-black);
+      padding: 1rem;
+      box-shadow: inset 3px 3px 0 var(--retro-white-soft), inset -3px -3px 0 var(--retro-gray);
+      height: 100%;
+    }
+
+    .retro-divider {
+      border: 0;
+      height: 4px;
+      background: var(--retro-black);
+      opacity: 1;
+    }
+
+    .marquee-box {
+      overflow: hidden;
+      white-space: nowrap;
+      border: 2px solid var(--retro-black);
+      background: var(--retro-white);
+      padding: 0.65rem 0;
+      box-shadow: var(--retro-shadow);
+    }
+
+    .marquee-text {
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0 1rem;
+    }
+
+    .btn, .btn-lg, .btn-sm {
+      border-radius: 0 !important;
+      border: 2px solid var(--retro-black);
+      background: var(--retro-white);
+      color: var(--retro-black);
+      box-shadow: none;
+      padding: 0.6rem 1rem;
+    }
+
+    .btn:active,
+    .btn.active {
+      box-shadow: inset -1px -1px 0 #ffffff, inset 1px 1px 0 #4a4a4a;
+      transform: translate(2px, 2px);
+    }
+
+    .btn-retro-dark,
+    .btn-light {
+      background: var(--retro-white);
+      color: var(--retro-black);
+    }
+
+    .btn-retro-dark:hover,
+    .btn-retro-dark:focus,
+    .btn-light:hover,
+    .btn-light:focus {
+      background: var(--retro-white-soft);
+      color: var(--retro-black);
+    }
+
+    .btn-retro-light {
+      background: var(--retro-white-soft);
+      color: var(--retro-black);
+    }
+
+    .btn-retro-light:hover,
+    .btn-retro-light:focus {
+      background: var(--retro-white);
+      color: var(--retro-black);
+    }
+
+    .retro-card,
+    .retro-panel-box,
+    .accordion .accordion-item,
+    .table-wrap,
+    .trust-box,
+    .cta-panel,
+    .about-card,
+    .proof-card,
+    .process-card,
+    .card-box,
+    .form-card {
+      border: 2px solid var(--retro-black);
+      background: var(--retro-panel);
+      box-shadow: none;
+    }
+
+    .retro-card .card-header,
+    .accordion .accordion-button,
+    .table-caption-bar,
+    .section-header {
+      background: var(--retro-black-soft);
+      color: var(--retro-white);
+      border-bottom: 2px solid var(--retro-black);
+      border-top: 1px solid var(--retro-gray);
+      border-left: 1px solid var(--retro-gray);
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.6rem 0.9rem;
+      box-shadow: inset -1px -1px 0 var(--retro-black);
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+    }
+
+    .accordion .accordion-button {
+      background: var(--retro-black-soft);
+      border-radius: 0 !important;
+      box-shadow: none;
+      color: var(--retro-white);
+    }
+
+    .accordion .accordion-button:not(.collapsed) {
+      background: var(--retro-black);
+      color: var(--retro-white);
+    }
+
+    .accordion .accordion-body {
+      background: var(--retro-white);
+      color: var(--retro-charcoal);
+      border-top: 2px solid var(--retro-black);
+      padding: 1rem;
+    }
+
+    .accordion .accordion-button:focus {
+      box-shadow: inset 0 0 0 2px var(--retro-gray-light);
+    }
+
+    .form-control,
+    .form-select {
+      border: 2px solid var(--retro-black);
+      border-radius: 0;
+      background: var(--retro-white);
+      box-shadow: inset 2px 2px 0 var(--retro-light-gray);
+      font-family: inherit;
+      padding: 0.8rem 0.9rem;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+      border-color: var(--retro-black);
+      box-shadow: inset 2px 2px 0 var(--retro-light-gray), 0 0 0 0.15rem rgba(0,0,0,0.15);
+    }
+
+    .badge.retro-badge {
+      border: 2px solid var(--retro-black);
+      border-radius: 0;
+      background: var(--retro-gray-light);
+      color: var(--retro-black);
+      padding: 0.45rem 0.6rem;
+    }
+
+    .table.retro-table {
+      margin-bottom: 0;
+      --bs-table-bg: transparent;
+      --bs-table-striped-bg: rgba(0,0,0,0.06);
+      --bs-table-hover-bg: rgba(0,0,0,0.12);
+      border-color: var(--retro-black);
+    }
+
+    .table.retro-table th,
+    .table.retro-table td {
+      border: 2px solid var(--retro-black);
+      vertical-align: middle;
+    }
+
+    .hero h1,
+    .section-title,
+    .proof-number,
+    .about-name,
+    .form-title {
+      font-weight: 800;
+    }
+
+    .headline-box {
+      border: 2px solid var(--retro-black);
+      background: var(--retro-white);
+      padding: 0.7rem 0.9rem;
+      box-shadow: var(--retro-shadow);
+      font-size: 0.95rem;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    .headline-box div {
+      display: block;
+    }
+
+    .hero-lead {
+      font-size: 1.05rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-sub {
+      margin-bottom: 1.25rem;
+    }
+
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .trust-box {
+      padding: 1.15rem 1rem;
+      text-align: center;
+      background: var(--retro-white);
+    }
+
+    .form-card {
+      padding: 1.5rem;
+      background: var(--retro-gray-light);
+    }
+
+    .section {
+      padding: 0.5rem 0 2rem;
+    }
+
+    .section-title {
+      margin-bottom: 0.6rem;
+    }
+
+    .section-subtitle {
+      max-width: 900px;
+      margin-bottom: 1.5rem;
+    }
+
+    .proof-card,
+    .process-card,
+    .card-box,
+    .about-card {
+      padding: 1.4rem;
+      height: 100%;
+      background: var(--retro-white);
+    }
+
+    .proof-label {
+      font-size: .84rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: .55rem;
+      font-weight: 700;
+    }
+
+    .proof-number {
+      font-size: 2rem;
+      margin-bottom: .3rem;
+    }
+
+    .service-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: .7rem;
+      margin-bottom: .7rem;
+      font-weight: 800;
+    }
+
+    .process-icon {
+      width: 52px;
+      height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--retro-black);
+      background: var(--retro-white);
+      font-size: 1rem;
+    }
+
+    .process-arrow {
+      position: absolute;
+      right: -18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 36px;
+      height: 36px;
+      background: var(--retro-gray-light);
+      border: 2px solid var(--retro-black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--retro-shadow);
+      z-index: 2;
+    }
+
+    .fail-card {
+      background: #f0f0f0;
+      border-left: 6px solid var(--retro-black);
+    }
+
+    .success-card {
+      background: var(--retro-gray-light);
+      border-left: 6px solid var(--retro-black);
+    }
+
+    .success-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 1rem 0 0;
+    }
+
+    .success-list li {
+      padding: .5rem 0;
+      display: flex;
+      gap: .7rem;
+      align-items: flex-start;
+    }
+
+    .cta-panel {
+      padding: 2rem;
+      text-align: center;
+      background: var(--retro-white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 280px minmax(0,1fr);
+      gap: 1.8rem;
+      align-items: center;
+    }
+
+    .about-img {
+      width: 100%;
+      max-width: 260px;
+      border: 3px solid var(--retro-black);
+      box-shadow: var(--retro-shadow);
+      display: block;
+      object-fit: cover;
+      background: var(--retro-gray-light);
+      filter: grayscale(100%) contrast(110%);
+    }
+
+    .footer {
+      border-top: 3px solid var(--retro-black);
+      background: var(--retro-panel);
+      box-shadow: 0 -4px 0 var(--retro-black);
+    }
+
+    .small-ui { font-size: 0.82rem; }
+
+    .retro-icon,
+    .service-glyph,
+    .mini-emoji {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--retro-black);
+      background: var(--retro-white);
+      min-width: 2rem;
+      height: 2rem;
+      line-height: 1;
+      font-size: 0.9rem;
+      flex: 0 0 auto;
+    }
+
+    
+
+    .hero-status-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.8rem;
+      margin-top: 1.4rem;
+    }
+
+    .status-chip {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.7rem 0.8rem;
+      border: 2px solid var(--retro-black);
+      background: var(--retro-white);
+      box-shadow: var(--retro-shadow);
+      font-size: 0.84rem;
+      text-transform: uppercase;
+    }
+
+    .blink-dot {
+      width: 12px;
+      height: 12px;
+      border: 2px solid var(--retro-black);
+      background: var(--retro-black);
+      flex: 0 0 auto;
+    }
+
+    .retro-metrics {
+      display: grid;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .metric-line {
+      display: grid;
+      grid-template-columns: 74px 1fr 50px;
+      gap: 0.65rem;
+      align-items: center;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+    }
+
+    .metric-bar {
+      position: relative;
+      height: 16px;
+      border: 2px solid var(--retro-black);
+      background: var(--retro-gray-light);
+      overflow: hidden;
+    }
+
+    
+    .metric-fill {
+      height: 100%;
+      background: var(--retro-black-soft);
+    }
+
+    .trust-box {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .trust-box::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 6px;
+      background: var(--retro-black);
+    }
+
+    .trust-box strong,
+    .proof-card .proof-label,
+    .proof-card .proof-number {
+      display: block;
+    }
+
+    .trust-icon-row,
+    .proof-icon-row,
+    .service-icon-row,
+    .about-icon-row {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.85rem;
+      flex-wrap: wrap;
+    }
+
+    .proof-graph {
+      margin-top: 1rem;
+      display: block;
+      font-size: 0.7rem;
+    }
+
+    .proof-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 6px;
+      min-width: 0;
+    }
+
+    .proof-time {
+      width: 64px;
+      text-align: right;
+      white-space: nowrap;
+      flex: 0 0 64px;
+    }
+
+    .proof-bar {
+      flex: 1;
+      height: 10px;
+      border: 2px solid var(--retro-black);
+      background: var(--retro-gray-light);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .proof-fill {
+      height: 100%;
+      background: var(--retro-black-soft);
+    }
+
+    .proof-value {
+      width: 56px;
+      text-align: left;
+      white-space: nowrap;
+      flex: 0 0 56px;
+    }
+
+    .proof-bar-wrap {
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      min-width: 0;
+    }
+
+    .service-head {
+      align-items: center;
+    }
+
+    .service-glyph {
+      font-size: 0.95rem;
+    }
+
+    .service-list-mini {
+      list-style: none;
+      padding: 0;
+      margin: 0.8rem 0 0;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    .service-list-mini li {
+      display: flex;
+      gap: 0.5rem;
+      padding: 0.18rem 0;
+    }
+
+    .process-scan {
+      height: 10px;
+      border: 2px solid var(--retro-black);
+      background: var(--retro-gray-light);
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+
+    .process-scan span {
+      display: block;
+      width: 35%;
+      height: 100%;
+      background: var(--retro-black-soft);
+      transform: translateX(90%);
+    }
+
+    .bullet-icon {
+      display: inline-block;
+      width: 1.2rem;
+      font-weight: 700;
+    }
+
+    .terminal-line {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      font-size: 0.82rem;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 18px;
+      background: var(--retro-black-soft);
+    }
+
+    /* terminal module */
+    .terminal-box {
+      border: 2px solid var(--retro-black);
+      background: var(--retro-white);
+      box-shadow: var(--retro-shadow);
+      margin: 1rem 0 1.2rem;
+    }
+
+    .terminal-header {
+      background: var(--retro-black-soft);
+      color: #fff;
+      padding: 0.35rem 0.6rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      border-bottom: 2px solid var(--retro-gray);
+    }
+
+    .terminal-body {
+      padding: 0.5rem 0.6rem;
+      font-size: 0.75rem;
+      line-height: 1.25;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .terminal-body div::before {
+      content: "> ";
+      font-weight: 700;
+    }
+
+    .terminal-body div:last-child::before {
+      content: "[OK] ";
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.8rem;
+      margin-top: 1.25rem;
+    }
+
+    .about-stat {
+      border: 2px solid var(--retro-black);
+      background: var(--retro-white);
+      box-shadow: var(--retro-shadow);
+      padding: 0.8rem;
+      text-align: center;
+    }
+
+    .about-stat strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    @media (max-width: 991.98px) {
+      .about-stats,
+      .hero-status-grid { grid-template-columns: 1fr; }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    @media (max-width: 991.98px) {
+      .trust-row { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-img { margin: 0 auto; }
+      .process-arrow { display: none; }
+    }
+
+    @media (max-width: 767.98px) {
+      .hero { padding: 4rem 0 2rem; }
+      .section { padding-bottom: 1.5rem; }
+      .proof-card,
+      .process-card,
+      .card-box,
+      .about-card,
+      .form-card,
+      .cta-panel { padding: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg retro-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#top">EGE LEADS</a>
+      <button class="navbar-toggler border-2 border-dark rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link px-3" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#results">Results</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
+        </ul>
+        <a href="#form" class="btn btn-retro-dark ms-lg-3">Free Audit</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="retro-window">
+        <div class="retro-titlebar">
+          <span>B2B GOOGLE ADS & PPC CAMPAIGN MANAGEMENT</span>
+          <div class="retro-controls"><span></span><span></span><span></span></div>
+        </div>
+        <div class="p-4 p-lg-5">
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-7">
+              <div class="retro-screen">
+                <p class="small-ui mb-2">GOOGLE ADS / BING ADS / MANUFACTURING / QUALIFIED PIPELINE</p>
+                <span class="badge retro-badge mb-3">Free Google Ads Audit</span>
+                <div class="headline-box mb-3">
+                  <div>&gt; B2B GOOGLE ADS &amp; PPC</div>
+                  <div>MORE QUALIFIED LEADS. BETTER ROI.</div>
+                </div>
+                <p class="hero-lead"><strong>I am a digital marketing and PPC specialist focusing on SEM, lead generation, optimization, and increased revenue through expert web and internet marketing strategies.</strong></p>
+                <hr class="retro-divider my-3">
+                <div class="terminal-box">
+                  <div class="terminal-header">SYSTEM OUTPUT</div>
+                  <div class="terminal-body">
+                    <div>initializing campaign module</div>
+                    <div>loading keywords</div>
+                    <div>filtering low intent traffic</div>
+                    <div>optimization ready</div>
+                  </div>
+                  <div class="terminal-body" style="border-top:2px solid var(--retro-black); margin-top:6px;">
+                    <div>[INFO] campaign active</div>
+                    <div>[WARN] low intent segments detected</div>
+                    <div>[OK] conversion path stable</div>
+                  </div>
+                </div>
+                <div class="hero-status-grid">
+                  <div class="status-chip"><span class="blink-dot"></span><span>Campaign Engine: Live</span></div>
+                  <div class="status-chip"><span class="retro-icon">[+]</span><span>Audit Mode: Active</span></div>
+                  <div class="status-chip"><span class="retro-icon">[QL]</span><span>Lead Quality > Vanity Traffic</span></div>
+                  <div class="status-chip"><span class="retro-icon">&gt;_</span><span>Optimization Loop: Running</span></div>
+                </div>
+                <div class="d-grid gap-3 mt-3" style="grid-template-columns: 1fr 1fr;">
+                  <a href="#form" class="btn btn-retro-dark w-100">Request Audit</a>
+                  <a href="#services" class="btn btn-retro-light w-100">View Services</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div id="form" class="display-box d-flex flex-column justify-content-between gap-3">
+                <div>
+                  <div class="section-header mb-3">MODULE: AUDIT_TOOL / STATUS: READY</div>
+                  <p class="form-note mb-3">No obligation. I will review your campaigns personally and identify obvious gaps in keywords, ads, messaging, traffic quality, and conversion flow.</p>
+                </div>
+                <form>
+                  <div class="row g-3">
+                    <div class="col-12"><input name="name" class="form-control" placeholder="NAME" required></div>
+                    <div class="col-12"><input name="email" class="form-control" placeholder="EMAIL" required></div>
+                    <div class="col-12"><input name="domain" class="form-control" placeholder="DOMAIN NAME" required></div>
+                    <div class="col-12"><button class="btn btn-retro-dark w-100">Request Audit</button></div>
+                  </div>
+                </form>
+                <div class="section-header mb-2"><span style="background:var(--retro-black);color:#fff;padding:2px 6px;border:2px solid var(--retro-black);">[OUTPUT]</span> METRICS</div>
+                <div class="retro-metrics">
+                  <div class="metric-line">
+                    <span>CPL</span>
+                    <div>
+                      <div class="metric-bar"><div class="metric-fill" style="width:70%"></div></div>
+                      
+                    </div>
+                    <strong>DOWN</strong>
+                  </div>
+                  <div class="metric-line">
+                    <span>CPC</span>
+                    <div>
+                      <div class="metric-bar"><div class="metric-fill" style="width:30%"></div></div>
+                      
+                    </div>
+                    <strong>DOWN</strong>
+                  </div>
+                  <div class="metric-line">
+                    <span>ROI</span>
+                    <div>
+                      <div class="metric-bar"><div class="metric-fill" style="width:80%"></div></div>
+                      
+                    </div>
+                    <strong>UP</strong>
+                  </div>
+                  <div class="metric-line">
+                    <span>VALUE</span>
+                    <div>
+                      <div class="metric-bar"><div class="metric-fill" style="width:75%"></div></div>
+                      
+                    </div>
+                    <strong>UP</strong>
+                  </div>
+                </div>
+                <div class="form-trust">No spam. No pressure. Just a practical review of what is likely hurting performance. </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-box">
+              <div class="trust-icon-row"><span class="retro-icon">[@]</span><span class="retro-icon">[B2]</span></div>
+              <strong>Qualified Leads</strong>
+              <span>Focus on lead quality, not just traffic volume.</span>
+            </div>
+            <div class="trust-box">
+              <div class="trust-icon-row"><span class="retro-icon">[$]</span><span class="retro-icon">[ROI]</span></div>
+              <strong>Stronger ROI</strong>
+              <span>Reduce waste and improve acquisition efficiency.</span>
+            </div>
+            <div class="trust-box">
+              <div class="trust-icon-row"><span class="retro-icon">[##]</span><span class="retro-icon">[MFG]</span></div>
+              <strong>B2B Focus</strong>
+              <span>Campaigns aligned with real sales and pipeline outcomes.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pb-5">
+    <div class="container">
+      <div class="marquee-box mb-4">
+        <div class="marquee-text">DIGITAL MARKETING / PPC SPECIALIST / SEM / LEAD GENERATION / OPTIMIZATION / INTERNET / WEB / INCREASED REVENUE / SPECIALIZING IN B2B / EXPERT FOCUS</div>
+      </div>
+
+      <section class="section" id="results">
+        <div class="retro-panel-box">
+          <div class="section-header">MODULE: RESULTS / STATUS: ACTIVE</div>
+          <div class="p-4">
+            <p class="section-subtitle">Real performance outcomes from B2B campaigns—focused on conversion, qualified leads, and measurable revenue impact.</p>
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="proof-card">
+                  <div class="proof-icon-row"><span class="retro-icon">[\-]</span><span class="retro-icon">[CPL]</span></div>
+                  <div class="proof-label">Client Result</div>
+                  <div class="proof-number">-32%</div>
+                  <div class="proof-note">Reduction in cost per qualified lead after restructuring campaigns, tightening keyword intent, and eliminating wasted spend.</div>
+                  <div class="proof-graph down">
+                    <div class="proof-row"><span class="proof-time">year 1</span><div class="proof-bar-wrap"><div class="proof-bar"><div class="proof-fill" style="width:100%"></div></div></div><span class="proof-value">$120</span></div>
+                    <div class="proof-row"><span class="proof-time">year 2</span><div class="proof-bar-wrap"><div class="proof-bar"><div class="proof-fill" style="width:79%"></div></div></div><span class="proof-value">$95</span></div>
+                    <div class="proof-row"><span class="proof-time">year 3</span><div class="proof-bar-wrap"><div class="proof-bar"><div class="proof-fill" style="width:58%"></div></div></div><span class="proof-value">$70</span></div>
+                    <div class="proof-row"><span class="proof-time">year 4</span><div class="proof-bar-wrap"><div class="proof-bar"><div class="proof-fill" style="width:46%"></div></div></div><span class="proof-value">$55</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="proof-card">
+                  <div class="proof-icon-row"><span class="retro-icon">[+]</span><span class="retro-icon">[LD]</span></div>
+                  <div class="proof-label">Client Result</div>
+                  <div class="proof-number">2.4×</div>
+                  <div class="proof-note">Increase in qualified lead volume after improving messaging, keyword targeting, and funnel alignment.</div>
+                  <div class="proof-graph up">
+                    <div class="proof-row"><span class="proof-time">year 1</span><div class="proof-bar-wrap"><div class="proof-bar"><div class="proof-fill" style="width:35%"></div></div></div><span class="proof-value">120</span></div>
+                    <div class="proof-row"><span class="proof-time">year 2</span><div class="proof-bar-wrap"><div class="proof-bar"><div class="proof-fill" style="width:53%"></div></div></div><span class="proof-value">180</span></div>
+                    <div class="proof-row"><span class="proof-time">year 3</span><div class="proof-bar-wrap"><div class="proof-bar"><div class="proof-fill" style="width:76%"></div></div></div><span class="proof-value">260</span></div>
+                    <div class="proof-row"><span class="proof-time">year 4</span><div class="proof-bar-wrap"><div class="proof-bar"><div class="proof-fill" style="width:100%"></div></div></div><span class="proof-value">340</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="proof-card">
+                  <div class="proof-icon-row"><span class="retro-icon">[&gt;]</span><span class="retro-icon">[CTR]</span></div>
+                  <div class="proof-label">Client Result</div>
+                  <div class="proof-number">+18%</div>
+                  <div class="proof-note">CTR improvement driven by stronger ad copy, tighter campaign structure, and better audience targeting.</div>
+                  <div class="proof-graph up">
+                    <div class="proof-row"><span class="proof-time">year 1</span><div class="proof-bar-wrap"><div class="proof-bar"><div class="proof-fill" style="width:36%"></div></div></div><span class="proof-value">2.1%</span></div>
+                    <div class="proof-row"><span class="proof-time">year 2</span><div class="proof-bar-wrap"><div class="proof-bar"><div class="proof-fill" style="width:59%"></div></div></div><span class="proof-value">3.4%</span></div>
+                    <div class="proof-row"><span class="proof-time">year 3</span><div class="proof-bar-wrap"><div class="proof-bar"><div class="proof-fill" style="width:81%"></div></div></div><span class="proof-value">4.7%</span></div>
+                    <div class="proof-row"><span class="proof-time">year 4</span><div class="proof-bar-wrap"><div class="proof-bar"><div class="proof-fill" style="width:100%"></div></div></div><span class="proof-value">5.8%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="retro-window">
+          <div class="retro-titlebar">
+            <span>Services</span>
+            <div class="retro-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="p-4">
+            <p class="section-subtitle">Specializing in SEM, digital marketing, and PPC optimization across Google Ads and Bing Ads—focusing on lead generation, increased revenue, and high-performance web and internet marketing systems.</p>
+            <div class="row g-4">
+              <div class="col-md-4"><div class="card-box"><div class="service-head"><span class="service-glyph">[S]</span><span>PPC Strategy &amp; Management</span></div><div class="service-text">Full Google Ads and Bing Ads PPC management built around high purchase intent keywords, structured campaigns, dynamic search ads, audience targeting, and scalable acquisition performance.</div><ul class="service-list-mini"><li><span class="bullet-icon">&gt;</span><span>Search intent</span></li><li><span class="bullet-icon">&gt;</span><span>Campaign structure</span></li></ul></div></div>
+              <div class="col-md-4"><div class="card-box"><div class="service-head"><span class="service-glyph">[A]</span><span>Ads &amp; Messaging Optimization</span></div><div class="service-text">Rewrite headlines, ads, and messaging to improve CTR, relevancy, and aligning with audience intent to increase conversion and more leads.</div><ul class="service-list-mini"><li><span class="bullet-icon">&gt;</span><span>CTR lift</span></li><li><span class="bullet-icon">&gt;</span><span>Sharper copy</span></li></ul></div></div>
+              <div class="col-md-4"><div class="card-box"><div class="service-head"><span class="service-glyph">[L]</span><span>Landing Page Strategy</span></div><div class="service-text">Align landing pages with ad intent and audience targeting to improve conversion, reduce drop-off, and drive more leads and higher return from traffic.</div><ul class="service-list-mini"><li><span class="bullet-icon">&gt;</span><span>Message match</span></li><li><span class="bullet-icon">&gt;</span><span>Less drop-off</span></li></ul></div></div>
+              <div class="col-md-4"><div class="card-box"><div class="service-head"><span class="service-glyph">[Q]</span><span>Lead Quality Optimization</span></div><div class="service-text">Filter out low-intent traffic, refine targeting, and improve audience alignment to generate higher-quality leads and better conversion—not just more traffic.</div><ul class="service-list-mini"><li><span class="bullet-icon">&gt;</span><span>Intent filters</span></li><li><span class="bullet-icon">&gt;</span><span>Better fit</span></li></ul></div></div>
+              <div class="col-md-4"><div class="card-box"><div class="service-head"><span class="service-glyph">[R]</span><span>Retargeting &amp; Remarketing</span></div><div class="service-text">Re-engage high-intent visitors with targeted remarketing to increase conversion, recover lost opportunities, and maximize spend efficiency.</div><ul class="service-list-mini"><li><span class="bullet-icon">&gt;</span><span>Recover demand</span></li><li><span class="bullet-icon">&gt;</span><span>Lower waste</span></li></ul></div></div>
+              <div class="col-md-4"><div class="card-box"><div class="service-head"><span class="service-glyph">[T]</span><span>Tracking &amp; Attribution</span></div><div class="service-text">Set up accurate conversion tracking and attribution across the search engine so decisions are based on real performance—CTR, cost per click (CPC), and revenue—not vanity metrics.</div><ul class="service-list-mini"><li><span class="bullet-icon">&gt;</span><span>Real signals</span></li><li><span class="bullet-icon">&gt;</span><span>Clean data</span></li></ul></div></div>
+              <div class="col-md-4"><div class="card-box"><div class="service-head"><span class="service-glyph">[F]</span><span>Funnel Optimization</span></div><div class="service-text">Optimize the full funnel—from click to landing page to conversion—to improve efficiency, reduce leakage, and increase qualified pipeline and revenue.</div><ul class="service-list-mini"><li><span class="bullet-icon">&gt;</span><span>Less leakage</span></li><li><span class="bullet-icon">&gt;</span><span>More conversion</span></li></ul></div></div>
+              <div class="col-md-4"><div class="card-box"><div class="service-head"><span class="service-glyph">[I]</span><span>Reporting &amp; Insights</span></div><div class="service-text">Clear reporting focused on conversion, more leads, CTR, cost per click (CPC), spend, and revenue—turning data into actionable insights.</div><ul class="service-list-mini"><li><span class="bullet-icon">&gt;</span><span>Fast reads</span></li><li><span class="bullet-icon">&gt;</span><span>Actionable data</span></li></ul></div></div>
+              <div class="col-md-4"><div class="card-box"><div class="service-head"><span class="service-glyph">[G]</span><span>Audit &amp; Growth Roadmap</span></div><div class="service-text">Identify what’s broken across campaigns, messaging, and conversion flow—and build a clear plan to fix and scale performance.</div><ul class="service-list-mini"><li><span class="bullet-icon">&gt;</span><span>Gap map</span></li><li><span class="bullet-icon">&gt;</span><span>Growth path</span></li></ul></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="retro-window">
+          <div class="retro-titlebar">
+            <span>How I Work</span>
+            <div class="retro-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="p-4">
+            <p class="section-subtitle">A structured approach to managing and scaling PPC campaigns—from initial analysis to ongoing optimization and growth.</p>
+            <div class="row g-4">
+              <div class="col-md-4 position-relative">
+                <div class="process-card h-100">
+                  <div class="process-icon">1</div>
+                  <h5>Audit</h5>
+                  <p class="muted">Review account structure, keyword intent, traffic quality, ads, conversion flow, and wasted spend.</p>
+                  <div class="process-scan"><span></span></div>
+                </div>
+                <div class="process-arrow d-none d-md-flex">&gt;</div>
+              </div>
+              <div class="col-md-4 position-relative">
+                <div class="process-card h-100">
+                  <div class="process-icon">2</div>
+                  <h5>Refine</h5>
+                  <p class="muted">Tighten targeting, improve headlines and messaging, restructure campaigns, and sharpen acquisition efficiency.</p>
+                  <div class="process-scan"><span></span></div>
+                </div>
+                <div class="process-arrow d-none d-md-flex">&gt;</div>
+              </div>
+              <div class="col-md-4 position-relative">
+                <div class="process-card h-100">
+                  <div class="process-icon">3</div>
+                  <h5>Scale</h5>
+                  <p class="muted">Monitor performance, improve conversion quality, and keep pushing toward better ROI and stronger lead flow.</p>
+                  <div class="process-scan"><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="retro-panel-box">
+          <div class="section-header">MODULE: FAQ / STATUS: IDLE</div>
+          <div class="p-4">
+            <p class="section-subtitle">Straight answers to the questions most companies have before handing over their Google Ads or Bing Ads account.</p>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeadingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                    Do you work only with manufacturing and B2B companies?
+                  </button>
+                </h2>
+                <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Mostly, yes. My positioning is built around B2B lead generation, especially for manufacturing and technical businesses where traffic quality matters more than vanity metrics.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeadingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                    What happens during the free audit?
+                  </button>
+                </h2>
+                <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    I review campaign structure, keyword targeting, search terms, ads, landing page alignment, conversion tracking, and obvious budget waste. Then I point out what is hurting performance and where the biggest gains are likely to come from.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeadingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                    Can you improve lead quality, not just lead volume?
+                  </button>
+                </h2>
+                <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes. That is the whole point. More leads means nothing if they are weak, irrelevant, or never turn into pipeline. I focus on intent, targeting, messaging, and conversion flow so the leads are more likely to become real sales opportunities.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeadingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                    Do you manage both Google Ads and Bing Ads?
+                  </button>
+                </h2>
+                <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes. I manage both, depending on where the opportunity is. Google usually carries more volume, while Bing can sometimes deliver cheaper clicks and surprisingly strong B2B lead quality.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="cta-panel">
+          <h3 class="mb-3">If your campaigns are spending budget without generating enough qualified leads, there is a clear path to improve performance.</h3>
+          <p>Start with a free audit and I will show you where your Google Ads or Bing Ads campaigns are leaking budget, traffic quality, and conversion opportunities.</p>
+          <div class="terminal-line"><span>&gt; RUN AUDIT</span><span class="cursor"></span></div>
+          <a href="#form" class="btn btn-light btn-lg mt-3">Get My Free Audit</a>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="retro-window">
+          <div class="retro-titlebar">
+            <span>About Me</span>
+            <div class="retro-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="p-4">
+            <div class="about-card">
+              <div class="about-grid">
+                <div>
+                  <img src="https://www.egeleads.com/ege.jpg" alt="Ege Borluoglu" class="about-img" loading="lazy" decoding="async">
+                </div>
+                <div class="about-copy">
+                  <div class="about-icon-row"><span class="retro-icon">[U]</span><span class="retro-icon">[BIO]</span></div><div class="about-name mb-3">Ege Borluoglu</div>
+                  <p class="mb-3">Based in Toronto, I am a digital marketing specialist with over 15 years of experience specializing in PPC, SEM, and lead generation across web and internet platforms.</p>
+                  <p class="mb-3">My work focuses on optimization, increased revenue, and high-quality lead generation—positioning campaigns for real business outcomes, not vanity metrics.</p>
+                  <p class="mb-0">I optimize keywords, ads, headlines, messaging, CTR, and CPC to build campaigns that directly support revenue growth and stronger acquisition outcomes.</p>
+                  <div class="about-stats">
+                    <div class="about-stat"><strong>15+</strong><span>Years</span></div>
+                    <div class="about-stat"><strong>B2B</strong><span>Focus</span></div>
+                    <div class="about-stat"><strong>ROI</strong><span>Driven</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 small-ui">
+      <div>© 2026 EGE LEADS</div>
+      <div><a href="https://www.linkedin.com/in/egebor/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
