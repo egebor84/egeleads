@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EGE LEADS | PPC Specialist Toronto</title>
+  <meta name="description" content="EGE LEADS is the PPC website of Ege Borluoglu, a Toronto-based specialist helping businesses improve Google Ads and Bing Ads performance, lead quality, and ad spend efficiency." />
+  <meta name="author" content="Ege Borluoglu" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="EGE LEADS | PPC Specialist Toronto" />
+  <meta property="og:description" content="Toronto-based PPC specialist Ege Borluoglu helps businesses improve Google Ads and Bing Ads performance, lead quality, and ad spend efficiency." />
+  <meta property="og:url" content="https://www.egeleads.com/" />
+  <meta property="og:site_name" content="EGE LEADS" />
+  <meta property="og:image" content="https://www.egeleads.com/ege.jpg" />
+  <meta property="og:image:alt" content="Ege Borluoglu of EGE LEADS" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EGE LEADS | PPC Specialist Toronto" />
+  <meta name="twitter:description" content="Toronto-based PPC specialist Ege Borluoglu helps businesses improve Google Ads and Bing Ads performance, lead quality, and ad spend efficiency." />
+  <meta name="twitter:image" content="https://www.egeleads.com/ege.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    :root {
+      --red: #dc3545;
+      --blue: #0d6efd;
+      --green: #198754;
+      --yellow: #ffc107;
+      --black: #111111;
+      --white: #ffffff;
+      --gray: #6c757d;
+      --light-gray: #f8f9fa;
+      --border: #dee2e6;
+      --border-subtle: rgba(17, 17, 17, 0.08);
+      --border-soft: rgba(17, 17, 17, 0.12);
+      --border-accent: rgba(13, 110, 253, 0.16);
+      --radius-sm: 14px;
+      --radius-lg: 24px;
+      --shadow-soft: 0 12px 35px rgba(17, 17, 17, 0.06);
+      --shadow-hover: 0 16px 40px rgba(17, 17, 17, 0.08);
+      --shadow-logo: 0 8px 20px rgba(17, 17, 17, 0.08);
+      --shadow-photo: 0 10px 30px rgba(17, 17, 17, 0.08);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      background: var(--white);
+      color: var(--black);
+      line-height: 1.6;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      line-height: 1.2;
+    }
+
+    #top,
+    #services,
+    #about,
+    #contact {
+      scroll-margin-top: 92px;
+    }
+
+    .navbar {
+      background: var(--white);
+      padding: 0.75rem 0;
+    }
+
+    .navbar .container {
+      min-width: 0;
+    }
+
+    .navbar-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      color: var(--black) !important;
+      text-decoration: none;
+    }
+
+    .logo-mark {
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-sm);
+      background: var(--black);
+      color: var(--white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-logo);
+      border: 1px solid var(--border-subtle);
+      padding: 6px;
+      overflow: hidden;
+    }
+
+    .logo-mark svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .logo-title {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    .logo-subtitle {
+      font-size: 0.72rem;
+      color: var(--gray);
+      font-weight: 600;
+      margin-top: 4px;
+      letter-spacing: 0.03em;
+    }
+
+    .nav-link {
+      color: var(--gray) !important;
+      font-weight: 500;
+      padding: 0.5rem 0.85rem !important;
+    }
+
+    .navbar-toggler {
+      border-radius: 12px;
+      padding: 0.45rem 0.65rem;
+      border-color: var(--border-soft);
+      box-shadow: none !important;
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12) !important;
+    }
+
+    .navbar-collapse {
+      min-width: 0;
+    }
+
+    .nav-link:hover {
+      color: var(--blue) !important;
+    }
+
+    .hero {
+      position: relative;
+      padding: 100px 0 72px;
+      background: var(--white);
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("https://www.egeleads.com/marketing-pattern-background.min.svg");
+      background-position: center center;
+      background-repeat: repeat;
+      background-size: 420px auto;
+      filter: grayscale(1);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: transparent;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero > .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-layout > [class*="col-"] {
+      display: flex;
+    }
+
+    .hero-copy,
+    .hero-card {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-copy {
+      background: var(--white);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 32px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(13, 110, 253, 0.08);
+      color: var(--blue);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 4vw, 4.4rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .hero p.lead {
+      color: var(--gray);
+      max-width: 680px;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .trust-line {
+      color: var(--black);
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .proof-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .proof-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(13, 110, 253, 0.08);
+      border: 1px solid var(--border-accent);
+      color: var(--blue);
+      font-size: 0.9rem;
+      font-weight: 600;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .form-note {
+      color: var(--gray);
+      font-size: 0.92rem;
+      margin-top: 14px;
+      margin-bottom: 0;
+    }
+
+
+    .panel {
+      background: var(--white);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+    }
+
+    .hero-card {
+      position: relative;
+      padding: 30px 28px 28px;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 18px 42px rgba(17, 17, 17, 0.10);
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 7px;
+      background: linear-gradient(90deg, var(--blue) 0 25%, var(--green) 25% 50%, var(--yellow) 50% 75%, var(--red) 75% 100%);
+    }
+
+    .form-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: -4px 0 18px;
+    }
+
+    .form-trust span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 0.83rem;
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: center;
+      background: rgba(13, 110, 253, 0.08);
+      border: 1px solid var(--border-accent);
+      color: var(--blue);
+    }
+
+    .form-control {
+      width: 100%;
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      border: 1px solid var(--border-accent);
+      background: #fcfdff;
+      min-height: 54px;
+      line-height: 1.4;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .form-control:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+    }
+
+    .btn-brand {
+      border-radius: var(--radius-sm);
+      padding: 14px 22px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 1.2;
+      white-space: normal;
+      border: none;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .btn-main {
+      background: var(--black);
+      color: var(--white);
+      border: none;
+      box-shadow: 0 10px 22px rgba(17, 17, 17, 0.14);
+    }
+
+    .btn-main:hover {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      color: var(--gray);
+      max-width: 700px;
+      margin-bottom: 40px;
+    }
+
+    .service-card {
+      padding: 28px;
+      height: 100%;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .service-badge {
+      width: 54px;
+      height: 54px;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 18px;
+      color: var(--white);
+    }
+
+    .badge-blue { background: var(--blue); }
+    .badge-green { background: var(--green); }
+    .badge-red { background: var(--red); }
+    .badge-yellow { background: var(--yellow); color: var(--black); }
+
+    .dot-blue { background: var(--blue); }
+    .dot-green { background: var(--green); }
+    .dot-red { background: var(--red); }
+    .dot-yellow { background: var(--yellow); }
+
+    .service-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .service-card p,
+    .about-card p,
+    .cta-box p,
+    footer p {
+      color: var(--gray);
+      margin-bottom: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .about-card {
+      padding: 34px;
+      height: 100%;
+    }
+
+    .about-photo {
+      width: 100%;
+      max-width: 240px;
+      height: auto;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      display: block;
+      box-shadow: var(--shadow-photo);
+    }
+
+
+    .about-intro {
+      display: flex;
+      align-items: flex-start;
+      gap: 28px;
+    }
+
+    .about-intro > * {
+      min-width: 0;
+    }
+
+    .about-social {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 14px;
+      color: var(--black);
+      text-decoration: none;
+      font-size: 1rem;
+      line-height: 1;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .about-social:hover,
+    .about-social:focus {
+      color: var(--blue);
+      transform: translateY(-1px);
+    }
+
+
+    .stat-line {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .stat-line:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .stat-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-top: 8px;
+      flex-shrink: 0;
+    }
+
+    .cta-box {
+      padding: 36px;
+      text-align: center;
+      background: var(--black);
+      color: var(--white);
+      border-color: var(--black);
+      box-shadow: none;
+    }
+
+    .cta-box h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 22px;
+    }
+
+    .btn-light-custom {
+      background: var(--white);
+      color: var(--black);
+    }
+
+    .btn-light-custom:hover,
+    .btn-light-custom:focus {
+      background: var(--yellow);
+      color: var(--black);
+    }
+
+    
+
+    footer {
+      padding: 28px 0 40px;
+      border-top: 1px solid var(--border-subtle);
+      background: var(--white);
+    }
+
+    .footer-brand {
+      font-weight: 700;
+      color: var(--black);
+    }
+
+    @media (max-width: 991.98px) {
+      .hero-layout > [class*="col-"] {
+        display: block;
+      }
+
+      .hero {
+        padding: 84px 0 64px;
+      }
+
+      .hero::after {
+        background-size: 360px auto;
+      }
+
+      .hero-card {
+        margin-top: 22px;
+      }
+
+      .about-intro {
+        flex-direction: column;
+      }
+
+      .about-photo {
+        max-width: 220px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .hero-copy {
+        padding: 24px;
+      }
+
+      .navbar {
+        padding: 0.65rem 0;
+      }
+
+      .navbar-collapse {
+        margin-top: 0.75rem;
+        padding-top: 0.5rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .nav-link {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .navbar-brand {
+        gap: 10px;
+      }
+
+      .logo-mark {
+        width: 48px;
+        height: 48px;
+      }
+
+      .logo-title {
+        font-size: 0.95rem;
+      }
+
+      .logo-subtitle {
+        font-size: 0.68rem;
+      }
+
+      .hero {
+        padding: 72px 0 56px;
+      }
+
+      .hero::after {
+        background-size: 300px auto;
+        background-position: center top;
+      }
+
+      .hero p.lead {
+        font-size: 1rem;
+      }
+
+      .section {
+        padding: 64px 0;
+      }
+
+      .panel,
+      .about-card,
+      .service-card,
+      .hero-card,
+      .cta-box {
+        border-radius: 20px;
+      }
+
+      .about-card,
+      .service-card,
+      .hero-card,
+      .cta-box {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      footer {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .hero-copy {
+        padding: 22px;
+      }
+
+      .hero > .container,
+      .section .container,
+      footer .container,
+      .navbar .container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 10vw, 2.7rem);
+      }
+
+      .proof-pill,
+      .form-trust span {
+        font-size: 0.8rem;
+      }
+
+      .hero-card,
+      .about-card,
+      .service-card,
+      .cta-box {
+        padding: 22px;
+      }
+
+      .cta-box h2,
+      .section-title {
+        font-size: 1.7rem;
+      }
+
+      .about-photo {
+        max-width: 180px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="light">
+    <div class="container">
+      <a class="navbar-brand" href="#top" aria-label="EGE LEADS home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Search and analytics logo">
+            <circle cx="28" cy="28" r="14" fill="none" stroke="#ffffff" stroke-width="6" />
+            <path d="M38 38l10 10" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+            <path d="M22 31l6-6 5 4 7-8" fill="none" stroke="#0d6efd" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="22" cy="31" r="2.6" fill="#0d6efd" />
+            <circle cx="28" cy="25" r="2.6" fill="#0d6efd" />
+            <circle cx="33" cy="29" r="2.6" fill="#0d6efd" />
+            <circle cx="40" cy="21" r="2.6" fill="#0d6efd" />
+          </svg>
+        </span>
+        <span class="logo-text">
+          <span class="logo-title">EGE LEADS</span>
+          <span class="logo-subtitle">B2B PPC Specialist</span>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="row g-4 hero-layout align-items-stretch">
+        <div class="col-lg-7">
+          <div class="hero-copy">
+            <span class="eyebrow">PPC Specialist • Toronto, Canada</span>
+            <h1>PPC for Manufacturing and Electronics Companies</h1>
+            <p class="lead">
+              I’m Ege Borluoglu, a Toronto-based PPC specialist with 15 years of experience managing B2B PPC campaigns for manufacturing and electronics businesses. I help companies generate better leads and stronger results from Google Ads and Bing Ads.
+            </p>
+            <p class="trust-line">Focused on practical PPC strategy, cleaner tracking, and better lead quality.</p>
+            <div class="proof-bar">
+              <span class="proof-pill">Setup</span>
+              <span class="proof-pill">PPC Strategy</span>
+              <span class="proof-pill">A/B Testing</span>
+              <span class="proof-pill">Keyword Research</span>
+              <span class="proof-pill">Tracking &amp; Analytics</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="panel hero-card">
+            <h2 class="h4 fw-bold mb-3">Request a Free PPC Review</h2>
+            <p class="text-secondary mb-4">Send your details and website for a free PPC review and see how you can improve lead quality, campaign performance, and ad spend efficiency.</p>
+            <div class="form-trust" aria-label="Form trust highlights">
+              <span>Free Review</span>
+              <span>No Obligation</span>
+              <span>B2B PPC Focus</span>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="9bfb36a2-c8c1-4b7d-8023-75a72822cf56">
+              <input type="hidden" name="subject" value="New PPC Review Request from EGE LEADS">
+              <input type="hidden" name="from_name" value="EGE LEADS Website">
+              <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off">
+              <div class="mb-3">
+                <label for="name" class="form-label fw-semibold">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your email" required>
+              </div>
+              <div class="mb-4">
+                <label for="url" class="form-label fw-semibold">URL</label>
+                <input type="url" class="form-control" id="url" name="website" placeholder="https://yourwebsite.com" required>
+              </div>
+              <button type="submit" class="btn btn-brand btn-main w-100">Get a Free PPC Review</button>
+              <p class="form-note">No pressure. Just send your website and I’ll take a look.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <p class="section-subtitle">
+        Simple B2B PPC services to help you improve conversion value, lead quality, and overall campaign performance.
+      </p>
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3">
+          <div class="panel service-card">
+            <div class="service-badge badge-blue">01</div>
+            <h3>PPC Strategy, Setup &amp; Management</h3>
+            <p>I set up and manage Google Ads and Bing Ads campaigns to help you improve conversion value, generate better B2B leads, and capture qualified search demand more effectively.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="panel service-card">
+            <div class="service-badge badge-green">02</div>
+            <h3>Tracking, Reporting &amp; Insights</h3>
+            <p>I set up accurate conversion tracking, improve reporting clarity, and analyze campaign performance so you can measure form submissions, calls, quote requests, and real lead actions more effectively.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="panel service-card">
+            <div class="service-badge badge-yellow">03</div>
+            <h3>Keyword, Audience &amp; Competitors</h3>
+            <p>I research keywords, audience segments, and competitor positioning to help you target better search intent, refine campaign strategy, and uncover new growth opportunities.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="panel service-card">
+            <div class="service-badge badge-red">04</div>
+            <h3>Campaign Optimization &amp; Testing</h3>
+            <p>I optimize campaigns and test ads, targeting, and landing page elements to improve lead quality, improve budget efficiency, and increase conversion performance over time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pt-0" id="about">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-6">
+          <div class="panel about-card">
+            <div class="about-intro">
+              <img src="https://www.egeleads.com/ege.jpg" alt="Ege Borluoglu" class="about-photo">
+              <div>
+                <h2 class="section-title mb-3">About Me</h2>
+                <p>
+                  I’m Ege Borluoglu, a Toronto-based PPC specialist with 15 years of experience managing Google Ads and Bing Ads campaigns for manufacturing and electronics companies. I help businesses improve lead quality, increase efficiency, and get more value from their PPC campaigns.
+                </p>
+                <p class="mt-3">
+                  My approach is practical: improve tracking, refine targeting, and build campaigns that support real business goals.
+                </p>
+                <a href="https://www.linkedin.com/in/egebor/" class="about-social" target="_blank" rel="noopener noreferrer" aria-label="Visit Ege Borluoglu on LinkedIn">
+                  <i class="bi bi-linkedin" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="panel about-card">
+            <h2 class="section-title mb-3">How I Help</h2>
+            <div class="stat-line">
+              <span class="stat-dot dot-blue"></span>
+              <div>
+                <strong>Reach the right people</strong>
+                <p>I help you show your ads to people who are already searching for what you offer, especially through high purchase intent, low volume keywords.</p>
+              </div>
+            </div>
+            <div class="stat-line">
+              <span class="stat-dot dot-green"></span>
+              <div>
+                <strong>Increase Budget Efficiency</strong>
+                <p>I improve your campaigns so more of your budget goes toward clicks that actually matter by strengthening keyword targeting, ad relevance, and overall campaign performance.</p>
+              </div>
+            </div>
+            <div class="stat-line">
+              <span class="stat-dot dot-yellow"></span>
+              <div>
+                <strong>Improve targeting clarity</strong>
+                <p>I use keyword, audience, and competitor insights to help you target more relevant searches and attract better-fit leads.</p>
+              </div>
+            </div>
+            <div class="stat-line">
+              <span class="stat-dot dot-red"></span>
+              <div>
+                <strong>Keep improving performance</strong>
+                <p>I refine campaigns over time through testing and optimization so you can improve results, strengthen lead quality, and increase efficiency.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="panel cta-box">
+        <h2>Ready to get more leads from your ads?</h2>
+        <p>Send your website and I’ll review your Google Ads or Bing Ads and show you where you can improve conversion value and lead quality.</p>
+        <a href="#top" class="btn-brand btn-light-custom">Get a Free PPC Review</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+      <div class="footer-brand">© 2026 Ege Leads</div>
+      <p class="mb-0">Result-Driven PPC Services • Google Ads • Bing Ads • Toronto, Canada</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
