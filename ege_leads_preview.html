@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EGE LEADS | PPC Specialist Toronto</title>
+  <meta name="description" content="EGE LEADS is the PPC website of Ege Borluoglu, a Toronto-based specialist helping businesses improve Google Ads and Bing Ads performance, lead quality, and ad spend efficiency." />
+  <meta name="author" content="Ege Borluoglu" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="EGE LEADS | PPC Specialist Toronto" />
+  <meta property="og:description" content="Toronto-based PPC specialist Ege Borluoglu helps businesses improve Google Ads and Bing Ads performance, lead quality, and ad spend efficiency." />
+  <meta property="og:url" content="https://www.egeleads.com/" />
+  <meta property="og:site_name" content="EGE LEADS" />
+  <meta property="og:image" content="https://www.egeleads.com/ege.jpg" />
+  <meta property="og:image:alt" content="Ege Borluoglu of EGE LEADS" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EGE LEADS | PPC Specialist Toronto" />
+  <meta name="twitter:description" content="Toronto-based PPC specialist Ege Borluoglu helps businesses improve Google Ads and Bing Ads performance, lead quality, and ad spend efficiency." />
+  <meta name="twitter:image" content="https://www.egeleads.com/ege.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    :root {
+      --blue:#0d6efd; --green:#198754; --red:#dc3545; --yellow:#ffc107; --black:#111; --white:#fff; --gray:#6c757d;
+      --border:#dee2e6; --border-subtle:rgba(17,17,17,.08); --border-accent:rgba(13,110,253,.16);
+      --surface:rgba(255,255,255,.92); --surface-border:rgba(255,255,255,.72); --input-bg:#fcfdff;
+      --accent-soft:rgba(13,110,253,.08); --accent-soft-hover:rgba(13,110,253,.06); --focus-ring:rgba(13,110,253,.12);
+      --inverse-muted:rgba(255,255,255,.75); --glow-1:rgba(13,110,253,.12); --glow-2:rgba(13,110,253,.08); --glow-3:rgba(13,110,253,.05);
+      --page-start:#f4f9ff; --page-mid:#fff; --page-end:#f7fbff; --font:'Inter',Arial,Helvetica,sans-serif;
+      --radius-sm:14px; --radius-lg:24px; --radius-mobile:20px; --pill:999px;
+      --s1:4px; --s2:6px; --s3:8px; --s4:12px; --s5:14px; --s6:16px; --s7:18px; --s8:20px; --s9:22px; --s10:24px; --s11:28px; --s12:30px; --s13:32px; --s14:34px; --s15:36px; --s16:40px;
+      --section:80px; --section-mobile:64px; --footer-bottom:40px; --container-mobile:20px; --nav-offset:92px; --control-h:54px;
+      --logo:56px; --badge:54px; --photo:240px; --photo-tablet:220px; --photo-mobile:180px;
+      --shadow:0 10px 28px rgba(17,17,17,.06); --shadow-hover:0 16px 36px rgba(17,17,17,.09); --blur-card:8px; --blur-footer:10px; --t:.2s ease;
+    }
+    *,*::before,*::after { box-sizing:border-box; }
+    html { scroll-behavior:auto; -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+    body {
+      margin:0; overflow-x:hidden; color:var(--black); line-height:1.6; text-rendering:optimizeLegibility;
+      font-family:var(--font); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      background:
+        radial-gradient(circle at 15% 10%,var(--glow-1),transparent 24%),
+        radial-gradient(circle at 85% 8%,var(--glow-2),transparent 20%),
+        radial-gradient(circle at 50% 0%,var(--glow-3),transparent 30%),
+        linear-gradient(180deg,var(--page-start) 0%,var(--page-mid) 42%,var(--page-end) 100%);
+    }
+    img { display:block; max-width:100%; height:auto; }
+    svg { display:block; max-width:100%; }
+    input,button,textarea,select { font:inherit; }
+    h1,h2,h3,h4,h5,h6 { line-height:1.2; }
+    #services,#about,#contact { scroll-margin-top:var(--nav-offset); }
+    .anchor-offset { display:block; height:var(--nav-offset); margin-top:calc(var(--nav-offset) * -1); visibility:hidden; pointer-events:none; }
+    .surface-card {
+      background:var(--surface); border:1px solid var(--surface-border); border-radius:var(--radius-lg); box-shadow:var(--shadow);
+      backdrop-filter:blur(var(--blur-card)); -webkit-backdrop-filter:blur(var(--blur-card));
+    }
+    .section { padding:var(--section) 0; }
+    .section-flush { padding-top:0; }
+    .section-title { margin-bottom:var(--s4); font-size:2rem; font-weight:800; }
+    .section-subtitle { max-width:700px; margin-bottom:var(--s16); color:var(--gray); }
+    .navbar {
+      position:absolute; top:0; right:0; left:0; z-index:10; padding:var(--s4) 0; background:transparent;
+      border-bottom:none; box-shadow:none; backdrop-filter:none; -webkit-backdrop-filter:none;
+    }
+    .navbar-shell { display:flex; align-items:center; justify-content:space-between; gap:var(--s6); flex-wrap:wrap; min-width:0; }
+    .navbar .navbar-brand {
+      display:inline-flex; align-items:center; gap:var(--s4); color:var(--black); font-weight:700; letter-spacing:.2px; text-decoration:none;
+    }
+    .nav-links { display:flex; align-items:center; gap:var(--s2); flex-wrap:wrap; min-width:0; margin:0 0 0 auto; padding:0; list-style:none; }
+    .nav-links li { display:flex; }
+    .site-nav-link {
+      display:inline-flex; align-items:center; padding:var(--s3) var(--s5); border-radius:var(--radius-sm); color:var(--gray);
+      font-weight:500; text-decoration:none; transition:color var(--t), background-color var(--t);
+    }
+    .site-nav-link:hover,.site-nav-link:focus { color:var(--blue); background:var(--accent-soft-hover); }
+    .logo-mark {
+      display:inline-flex; align-items:center; justify-content:center; width:var(--logo); height:var(--logo); padding:var(--s2); overflow:hidden;
+      border:1px solid var(--border-subtle); border-radius:var(--radius-sm); background:var(--black); box-shadow:var(--shadow); color:var(--white);
+    }
+    .logo-mark svg { width:100%; height:100%; }
+    .logo-text { display:flex; flex-direction:column; line-height:1; }
+    .logo-title { font-size:1rem; font-weight:800; letter-spacing:.04em; }
+    .logo-subtitle { margin-top:var(--s1); color:var(--gray); font-size:.72rem; font-weight:600; letter-spacing:.03em; }
+    .hero { position:relative; padding:148px 0 72px; overflow:hidden; background:transparent; }
+    .hero > .container { position:relative; z-index:1; }
+    .hero-layout > [class*="col-"] { display:flex; }
+    .hero-copy,.hero-card { width:100%; height:100%; }
+    .hero-copy { padding:var(--s13); }
+    .hero-title { margin-bottom:var(--s7); font-size:clamp(2.2rem,4vw,4.4rem); font-weight:800; line-height:1.1; }
+    .hero-lead { max-width:680px; margin-bottom:var(--s8); color:var(--gray); font-size:1.1rem; }
+    .eyebrow {
+      display:inline-block; margin-bottom:var(--s7); padding:var(--s3) var(--s5); border-radius:var(--pill); background:var(--accent-soft);
+      color:var(--blue); font-size:.85rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    }
+    .trust-line { margin-bottom:var(--s5); color:var(--black); font-weight:600; }
+    .proof-bar,.form-trust { display:flex; flex-wrap:wrap; gap:var(--s3); }
+    .proof-bar { margin-top:var(--s7); }
+    .form-trust { margin:calc(var(--s1) * -1) 0 var(--s7); }
+    .pill-badge {
+      display:inline-flex; align-items:center; justify-content:center; padding:var(--s3) var(--s4); border:1px solid var(--border-accent);
+      border-radius:var(--pill); background:var(--accent-soft); color:var(--blue); line-height:1.2; text-align:center;
+    }
+    .proof-bar .pill-badge { font-size:.9rem; font-weight:600; }
+    .form-trust .pill-badge { padding:7px 11px; font-size:.83rem; font-weight:700; }
+    .hero-card { padding:var(--s12) var(--s11) var(--s11); border-top:var(--s2) solid var(--blue); }
+    .form-title { margin-bottom:var(--s4); font-size:1.5rem; font-weight:700; }
+    .form-intro,.form-note,.service-copy,.about-copy,.section-subtitle,.footer-copy { color:var(--gray); }
+    .form-intro { margin-bottom:var(--s11); }
+    .field-group { margin-bottom:var(--s4); }
+    .field-group:last-of-type { margin-bottom:var(--s11); }
+    .field-label { display:inline-block; margin-bottom:var(--s3); font-weight:600; }
+    .form-control {
+      width:100%; min-height:var(--control-h); padding:var(--s5) var(--s6); border:1px solid var(--border-accent);
+      border-radius:var(--radius-sm); background:var(--input-bg); line-height:1.4; appearance:none; -webkit-appearance:none;
+    }
+    .form-control:focus { border-color:var(--blue); box-shadow:0 0 0 .2rem var(--focus-ring); }
+    .form-note { margin:var(--s5) 0 0; font-size:.92rem; }
+    .botcheck-field { display:none; }
+    .btn-brand {
+      display:inline-flex; align-items:center; justify-content:center; min-height:var(--control-h); padding:var(--s5) var(--s9); border:none;
+      border-radius:var(--radius-sm); cursor:pointer; color:inherit; font-weight:700; line-height:1.2; text-align:center; text-decoration:none;
+      white-space:normal; appearance:none; -webkit-appearance:none;
+      transition:background-color var(--t), color var(--t), box-shadow var(--t), transform var(--t);
+    }
+    .btn-main { width:100%; background:var(--black); box-shadow:var(--shadow); color:var(--white); }
+    .btn-main:hover,.btn-main:focus { background:var(--blue); box-shadow:var(--shadow-hover); color:var(--white); transform:translateY(-1px); }
+    .btn-inverse { background:var(--white); color:var(--black); }
+    .btn-inverse:hover,.btn-inverse:focus { background:var(--yellow); color:var(--black); }
+    .service-card { height:100%; padding:var(--s11); transition:transform var(--t), box-shadow var(--t); }
+    .service-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-hover); }
+    .service-badge {
+      display:inline-flex; align-items:center; justify-content:center; width:var(--badge); height:var(--badge); margin-bottom:var(--s7);
+      border-radius:var(--radius-sm); background:var(--accent-color,var(--blue)); color:var(--accent-contrast,var(--white)); font-weight:800;
+    }
+    .service-title { margin-bottom:var(--s4); font-size:1.2rem; font-weight:700; }
+    .service-copy,.about-copy,.cta-copy,.footer-copy { margin-bottom:0; overflow-wrap:anywhere; }
+    .accent-blue { --accent-color:var(--blue); --accent-contrast:var(--white); }
+    .accent-green { --accent-color:var(--green); --accent-contrast:var(--white); }
+    .accent-red { --accent-color:var(--red); --accent-contrast:var(--white); }
+    .accent-yellow { --accent-color:var(--yellow); --accent-contrast:var(--black); }
+    .about-card { height:100%; padding:var(--s14); }
+    .about-intro { display:flex; align-items:flex-start; gap:var(--s11); }
+    .about-intro > * { min-width:0; }
+    .about-photo {
+      width:100%; max-width:var(--photo); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); box-shadow:var(--shadow);
+    }
+    .about-copy + .about-copy,.about-social { margin-top:var(--s5); }
+    .about-social {
+      display:inline-flex; align-items:center; justify-content:center; color:var(--black); font-size:1rem; line-height:1; text-decoration:none;
+      transition:color var(--t), transform var(--t);
+    }
+    .about-social:hover,.about-social:focus { color:var(--blue); transform:translateY(-1px); }
+    .stat-line { display:flex; align-items:flex-start; gap:var(--s4); padding:var(--s5) 0; border-bottom:1px solid var(--border-subtle); }
+    .stat-line:last-child { padding-bottom:0; border-bottom:none; }
+    .stat-dot {
+      width:12px; height:12px; margin-top:var(--s3); flex-shrink:0; border-radius:50%; background:var(--accent-color,var(--blue));
+    }
+    .cta-box {
+      padding:var(--s15); overflow:hidden; border-radius:var(--radius-lg); box-shadow:var(--shadow); color:var(--white); text-align:center;
+      background:linear-gradient(180deg,rgba(17,17,17,.96) 0%,rgba(17,17,17,.9) 100%);
+    }
+    .cta-title { margin-bottom:var(--s4); font-size:2rem; font-weight:800; }
+    .cta-copy { margin-bottom:var(--s9); color:var(--inverse-muted); }
+    footer {
+      padding:var(--s11) 0 var(--footer-bottom); border-top:1px solid rgba(13,110,253,.08);
+      background:linear-gradient(180deg,rgba(255,255,255,.18) 0%,rgba(255,255,255,.42) 100%);
+      backdrop-filter:blur(var(--blur-footer)); -webkit-backdrop-filter:blur(var(--blur-footer));
+    }
+    .footer-layout { display:flex; align-items:center; justify-content:space-between; gap:var(--s3); flex-wrap:nowrap; }
+    .footer-brand { color:var(--black); font-weight:700; white-space:nowrap; }
+    .footer-copy { margin-left:auto; text-align:right; white-space:nowrap; }
+    @media (max-width:991.98px) {
+      .hero-layout > [class*="col-"] { display:block; }
+      .hero { padding:132px 0 64px; }
+      .hero-card { margin-top:var(--s9); }
+      .about-intro { flex-direction:column; }
+      .about-photo { max-width:var(--photo-tablet); }
+    }
+    @media (max-width:767.98px) {
+      .navbar-shell { align-items:flex-start; }
+      .nav-links { width:100%; gap:0; margin-left:0; padding-top:var(--s5); border-top:1px solid var(--border); }
+      .site-nav-link { padding-left:0; padding-right:0; border-radius:0; }
+      .hero { padding:116px 0 56px; }
+      .hero-lead { font-size:1rem; }
+      .section { padding:var(--section-mobile) 0; }
+      .surface-card,.cta-box,.about-photo { border-radius:var(--radius-mobile); }
+      .about-card,.service-card,.hero-card,.cta-box { padding-left:var(--s10); padding-right:var(--s10); }
+      footer { text-align:center; }
+      .footer-layout { flex-direction:column; align-items:center; flex-wrap:wrap; }
+      .footer-copy { margin-left:0; text-align:center; white-space:normal; }
+    }
+    @media (max-width:575.98px) {
+      .hero-copy { padding:var(--s9); }
+      .hero > .container,.section .container,footer .container,.navbar .container { padding-left:var(--container-mobile); padding-right:var(--container-mobile); }
+      .hero-title { font-size:clamp(2rem,10vw,2.7rem); }
+      .pill-badge { font-size:.8rem; }
+      .hero-card,.about-card,.service-card,.cta-box { padding:var(--s9); }
+      .cta-title,.section-title { font-size:1.7rem; }
+      .about-photo { max-width:var(--photo-mobile); }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      html { scroll-behavior:auto; }
+      *,*::before,*::after { transition:none !important; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar" aria-label="Primary">
+    <div class="container navbar-shell">
+      <a class="navbar-brand" href="#top" aria-label="EGE LEADS home">
+        <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><circle cx="28" cy="28" r="14" fill="none" stroke="#ffffff" stroke-width="6" /><path d="M38 38l10 10" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" /><path d="M22 31l6-6 5 4 7-8" fill="none" stroke="#0d6efd" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" /><circle cx="22" cy="31" r="2.6" fill="#0d6efd" /><circle cx="28" cy="25" r="2.6" fill="#0d6efd" /><circle cx="33" cy="29" r="2.6" fill="#0d6efd" /><circle cx="40" cy="21" r="2.6" fill="#0d6efd" /></svg></span>
+        <span class="logo-text"><span class="logo-title">EGE LEADS</span><span class="logo-subtitle">B2B PPC Specialist</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a class="site-nav-link" href="#services">Services</a></li>
+        <li><a class="site-nav-link" href="#about">About</a></li>
+        <li><a class="site-nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="row g-4 hero-layout align-items-stretch">
+        <div class="col-lg-7">
+          <div class="surface-card hero-copy">
+            <span class="eyebrow">PPC Specialist • Toronto, Canada</span>
+            <h1 class="hero-title">PPC for Manufacturing and Electronics Companies</h1>
+            <p class="hero-lead">I’m Ege Borluoglu, a Toronto-based PPC specialist with 15 years of experience managing B2B PPC campaigns for manufacturing and electronics businesses. I help companies generate better leads and stronger results from Google Ads and Bing Ads.</p>
+            <p class="trust-line">Focused on practical PPC strategy, cleaner tracking, and better lead quality.</p>
+            <div class="proof-bar">
+              <span class="pill-badge">Setup</span><span class="pill-badge">PPC Strategy</span><span class="pill-badge">A/B Testing</span><span class="pill-badge">Keyword Research</span><span class="pill-badge">Tracking &amp; Analytics</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div id="review-form" class="anchor-offset" aria-hidden="true"></div>
+          <div class="surface-card hero-card">
+            <h2 class="form-title">Request a Free PPC Review</h2>
+            <p class="form-intro">Send your details and website for a free PPC review and see how you can improve lead quality, campaign performance, and ad spend efficiency.</p>
+            <div class="form-trust" aria-label="Form trust highlights">
+              <span class="pill-badge">Free Review</span><span class="pill-badge">No Obligation</span><span class="pill-badge">B2B PPC Focus</span>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="9bfb36a2-c8c1-4b7d-8023-75a72822cf56">
+              <input type="hidden" name="subject" value="New PPC Review Request from EGE LEADS">
+              <input type="hidden" name="from_name" value="EGE LEADS Website">
+              <input type="checkbox" name="botcheck" class="botcheck-field" tabindex="-1" autocomplete="off">
+              <div class="field-group"><label for="name" class="field-label">Name</label><input type="text" class="form-control" id="name" name="name" placeholder="Your name" required></div>
+              <div class="field-group"><label for="email" class="field-label">Email</label><input type="email" class="form-control" id="email" name="email" placeholder="Your email" required></div>
+              <div class="field-group"><label for="url" class="field-label">URL</label><input type="url" class="form-control" id="url" name="website" placeholder="https://yourwebsite.com" required></div>
+              <button type="submit" class="btn-brand btn-main">Get a Free PPC Review</button>
+              <p class="form-note">No pressure. Just send your website and I’ll take a look.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <p class="section-subtitle">Simple B2B PPC services to help you improve conversion value, lead quality, and overall campaign performance.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3"><div class="surface-card service-card"><div class="service-badge accent-blue">01</div><h3 class="service-title">PPC Strategy, Setup &amp; Management</h3><p class="service-copy">I set up and manage Google Ads and Bing Ads campaigns to help you improve conversion value, generate better B2B leads, and capture qualified search demand more effectively.</p></div></div>
+        <div class="col-md-6 col-xl-3"><div class="surface-card service-card"><div class="service-badge accent-green">02</div><h3 class="service-title">Tracking, Reporting &amp; Insights</h3><p class="service-copy">I set up accurate conversion tracking, improve reporting clarity, and analyze campaign performance so you can measure form submissions, calls, quote requests, and real lead actions more effectively.</p></div></div>
+        <div class="col-md-6 col-xl-3"><div class="surface-card service-card"><div class="service-badge accent-yellow">03</div><h3 class="service-title">Keyword, Audience &amp; Competitors</h3><p class="service-copy">I research keywords, audience segments, and competitor positioning to help you target better search intent, refine campaign strategy, and uncover new growth opportunities.</p></div></div>
+        <div class="col-md-6 col-xl-3"><div class="surface-card service-card"><div class="service-badge accent-red">04</div><h3 class="service-title">Campaign Optimization &amp; Testing</h3><p class="service-copy">I optimize campaigns and test ads, targeting, and landing page elements to improve lead quality, improve budget efficiency, and increase conversion performance over time.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-flush" id="about">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-6">
+          <div class="surface-card about-card">
+            <div class="about-intro">
+              <img src="https://www.egeleads.com/ege.jpg" alt="Ege Borluoglu" class="about-photo">
+              <div>
+                <h2 class="section-title">About Me</h2>
+                <p class="about-copy">I’m Ege Borluoglu, a Toronto-based PPC specialist with 15 years of experience managing Google Ads and Bing Ads for B2B manufacturing and electronics companies. I help businesses attract more qualified leads through high-intent search, cleaner tracking, and tighter use of ad spend so they get more value from their PPC campaigns.</p>
+                <p class="about-copy">I take a practical, hands-on approach to PPC. That means focusing on real buying intent, clear measurement, and ongoing optimization built to support revenue, not just traffic or lead volume.</p>
+                <a href="https://www.linkedin.com/in/egebor/" class="about-social" target="_blank" rel="noopener noreferrer" aria-label="Visit Ege Borluoglu on LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="surface-card about-card">
+            <h2 class="section-title">How I Help</h2>
+            <div class="stat-line"><span class="stat-dot accent-blue"></span><div><strong>Reach the right people</strong><p class="about-copy">I help you show your ads to people who are already searching for what you offer, especially through high purchase intent, low volume keywords.</p></div></div>
+            <div class="stat-line"><span class="stat-dot accent-green"></span><div><strong>Increase Budget Efficiency</strong><p class="about-copy">I improve your campaigns so more of your budget goes toward clicks that actually matter by strengthening keyword targeting, ad relevance, and overall campaign performance.</p></div></div>
+            <div class="stat-line"><span class="stat-dot accent-yellow"></span><div><strong>Improve targeting clarity</strong><p class="about-copy">I use keyword, audience, and competitor insights to help you target more relevant searches and attract better-fit leads.</p></div></div>
+            <div class="stat-line"><span class="stat-dot accent-red"></span><div><strong>Keep improving performance</strong><p class="about-copy">I refine campaigns over time through testing and optimization so you can improve results, strengthen lead quality, and increase efficiency.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-title">Ready to get more leads from your ads?</h2>
+        <p class="cta-copy">Send your website and I’ll review your Google Ads or Bing Ads and show you where you can improve conversion value and lead quality.</p>
+        <a href="#review-form" class="btn-brand btn-inverse">Get a Free PPC Review</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-layout">
+      <div class="footer-brand">© 2026 Ege Leads</div>
+      <p class="footer-copy">Result-Driven PPC Services • Google Ads • Bing Ads • Toronto, Canada</p>
+    </div>
+  </footer>
+</body>
+</html>
